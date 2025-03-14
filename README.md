@@ -26,40 +26,46 @@ MYBLOG/
 ### Bước 1: Clone dự án
 
 ```bash
-git clone <your-repo-link>
+git clone https://github.com/trantrongtri04/ptud-gk-de-1.git
 ```
 
-### Bước 2: Tạo và kích hoạt môi trường ảo
+### Bước 2: Di chuyển vào thư mục dự án
+```bash
+cd ptud-gk-de-1
+```
+
+### Bước 3: Tạo và kích hoạt môi trường ảo
 
 ```bash
 python -m venv env
 
 # Windows
-.\env\Scripts\activate
+.\venv\Scripts\activate
 
 # macOS/Linux
 source env/bin/activate
 ```
 
-### Bước 3: Cài đặt các thư viện cần thiết
+### Bước 4: Cài đặt các thư viện cần thiết
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Bước 4: Chạy migrations để tạo database
+### Bước 5: Chạy migrations để tạo database
 
 ```bash
+python manage.py makemigrations
 python manage.py migrate
 ```
 
-### Bước 5: Tạo tài khoản admin (tùy chọn)
+### Bước 6: Tạo tài khoản admin (tùy chọn)
 
 ```bash
 python manage.py createsuperuser
 ```
 
-### Bước 6: Chạy server
+### Bước 7: Chạy server
 
 ```bash
 python manage.py runserver
