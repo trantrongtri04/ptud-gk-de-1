@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1> All Posts </h1>
+
+{% for post in posts %}
+    <h3>{{ post.title }}</h3>
+    <p>Published by {{ post.author.username }}</p>
+    <p>{{ post.content }}</p>
+    {% if post.image_url %}
+        <p><img src="{{ post.image_url }}" alt="Post Image" style="max-width: 100%;"></p>
+    {% endif %}
+
+    <!-- Nút điều hướng đến trang chi tiết bài viết -->
+    <a href="{% url 'post_detail' post.id %}">View Comments</a>
+
+    {% if post.author == request.user %}
+        <a href="{% url 'post-edit' post.id %}">Edit</a>
+        <a href="{% url 'post-delete' post.id %}">Delete</a>
+    {% endif %}
+
+    <hr>
+{% endfor %}
+
+{% endblock content %}
