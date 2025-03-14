@@ -7,7 +7,7 @@ Dự án này là một ứng dụng Blog được xây dựng bằng framework 
 ## Cấu trúc thư mục dự án
 
 ```
-MYBLOG/
+PTUD-GK-DE-1/
 ├── myblog/                    # Thư mục cấu hình chính của dự án
 ├── posts/                     # Ứng dụng quản lý bài viết
 ├── users/                     # Ứng dụng quản lý người dùng
