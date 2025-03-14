@@ -3,7 +3,9 @@
 ## Giới thiệu
 
 Họ tên: Trần Trọng Trí
+
 MSSV: 22665961
+
 STT: 63
 
 Dự án này là một ứng dụng Blog được xây dựng bằng framework Django. Blog hỗ trợ các tính năng quản lý bài viết, người dùng và dashboard thống kê thông tin cơ bản.
